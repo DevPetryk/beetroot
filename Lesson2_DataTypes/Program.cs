@@ -6,6 +6,22 @@
         {
             Console.WriteLine("**** Data types and variables *****");
             PrintMathFunctios();
+
+            Console.WriteLine();
+
+            /*
+                Write to console how many days left to New Year and how many days passed from New Year. 
+                Result in console should look like this:
+                X days left to New Year
+                Y days passed from New Year
+            */
+
+            DateTime currentDate = DateTime.Today;
+            int daysLeftToNewYear = DaysLeftToNewYear(currentDate);
+            int daysPassedFromNewYear = DaysPassedFromNewYear(currentDate);
+
+            Console.WriteLine($"{daysLeftToNewYear} days left to New Year");
+            Console.WriteLine($"{daysPassedFromNewYear} days passed from New Year");
         }
 
         private static void PrintMathFunctios()
@@ -29,21 +45,6 @@
             int a = 10;
             int b = 15;
             Console.WriteLine($"Out of the numbers {a} and {b}, the largest is: {Math.Max(a, b)} ");
-            Console.WriteLine();
-
-            /*
-                Write to console how many days left to New Year and how many days passed from New Year. 
-                Result in console should look like this:
-                X days left to New Year
-                Y days passed from New Year
-            */
-
-            DateTime currentDate = DateTime.Today;
-            int daysLeftToNewYear = DaysLeftToNewYear(currentDate);
-            int daysPassedFromNewYear = DaysPassedFromNewYear(currentDate);
-
-            Console.WriteLine($"{daysLeftToNewYear} days left to New Year");
-            Console.WriteLine($"{daysPassedFromNewYear} days passed from New Year");
 
         }
 
